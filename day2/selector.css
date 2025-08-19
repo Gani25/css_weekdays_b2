@@ -1,0 +1,35 @@
+/* 1. Element Select | Tag Selector */
+h1 {
+  background-color: red;
+  color: aqua;
+}
+
+/* Multiple selectors */
+h2,
+h3 {
+  background-color: blueviolet;
+  color: azure;
+}
+
+/* class selector */
+.box {
+  background-color: bisque;
+  color: crimson;
+}
+
+.box1 {
+  font-size: 25px;
+}
+
+/* Id Selector */
+#myDiv {
+  border-width: 3px;
+  border-color: red;
+  border-style: solid;
+}
+
+/* attribute selector */
+input[type="button"] {
+  color: red;
+  background-color: aqua;
+}

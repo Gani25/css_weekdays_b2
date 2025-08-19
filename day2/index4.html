@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendent Selector</title>
+    <style>
+        /* Descendent Selector : All the elements nested inside parent styling will be applied */
+        .parent {
+            background-color: burlywood;
+            /* short hand property */
+            border: 5px solid red;
+
+        }
+
+        .parent h1 {
+            background-color: aqua;
+        }
+
+        /* Adjacent Sibling Selector */
+        p+h1 {
+            color: green;
+            background-color: blue;
+        }
+
+        /* Child Combinator Selector : apply to direct child */
+        .parent1>h1 {
+
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <h1>Hello I am child heading of div</h1>
+        <p>I am para child of div</p>
+        <div class="child">
+            <h1>I am child inside div parent</h1>
+        </div>
+    </div>
+
+    <div>
+        <p>Hello</p>
+        <h1>Hii I am Abdul</h1>
+    </div>
+    <p>India</p>
+    <h1>India Is a Beautiful Country</h1>
+
+    <p>Demo</p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h1>Hello All</h1>
+
+    <div class="parent1">
+        <h1>Hello I am child heading of div</h1>
+        <p>I am para child of div</p>
+        <div class="child">
+            <h1>I am child inside div parent</h1>
+        </div>
+        <h1>Hello Hello</h1>
+    </div>
+
+
+</body>
+
+</html>
