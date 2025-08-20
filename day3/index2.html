@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClass</title>
+    <style>
+        h1 {
+            color: aqua;
+            background-color: brown;
+            cursor: pointer;
+        }
+
+        h1:hover {
+            color: crimson;
+            background-color: wheat;
+        }
+
+        input[type="submit"]:active {
+            background-color: crimson;
+            color: chartreuse;
+        }
+
+        input[type="radio"]:checked+label {
+            background-color: teal;
+            color: blanchedalmond;
+        }
+
+        .form-text:focus {
+            background-color: blue;
+            color: darkorange;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo Class (:)</h1>
+    <ul>
+        <li>:hover</li>
+        <li>:active</li>
+        <li>:focus</li>
+        <li>:checked</li>
+        <li>:nth-of-type</li>
+        <li>:first-child</li>
+    </ul>
+
+    <form action="">
+        <input type="text" name="" id="" class="form-text" placeholder="Enter Name"><br><br>
+        <label>Gender: </label>
+        <input type="radio" name="gender" id="m"> <label for="m">Male</label>
+        <input type="radio" name="gender" id="g"> <label for="g">Female</label>
+        <input type="radio" name="gender" id="o"> <label for="o">Other</label>
+        <br><br>
+        <input type="submit" value="Save">
+    </form>
+</body>
+
+</html>

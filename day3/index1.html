@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selectors</title>
+
+    <style>
+        p+h1 {
+            background-color: aqua;
+            color: crimson;
+            font-size: 60px;
+        }
+
+        /* General Siblings */
+        h1~p {
+            font-size: 30px;
+            color: violet;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>First Div</h1>
+        <p>Adjacent Sibling Selector</p>
+        <h1>Heading 1 and sibling of p</h1>
+        <h1>Heading 1 and second sibling of p</h1>
+    </div>
+    <div>
+        <h1>General Sibling Selector</h1>
+        <p>Helo Helo 1 </p>
+        <h3>Heading 3</h3>
+        <p>Helo Helo 2</p>
+        <div>
+            <p>Inside Div</p>
+        </div>
+        <p>Outside div but p tag</p>
+    </div>
+
+</body>
+
+</html>
