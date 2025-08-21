@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Specificity</title>
+    <style>
+        #myDiv {
+            width: 80%;
+            height: 600px;
+            background-color: blanchedalmond;
+        }
+
+        h1 {
+            text-align: center;
+            color: red !important;
+        }
+
+        .sub-box h1 {
+            color: purple;
+        }
+
+        .box .sub-box .heading {
+            color: pink;
+        }
+
+        #myDiv div h1 {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box" id="myDiv">
+        <div class="sub-box">
+            <h1 class="heading">Selectors Specificity</h1>
+
+            <input type="text" name="" id="" placeholder="Enter Text" class="input-box">
+        </div>
+    </div>
+
+</body>
+
+</html>

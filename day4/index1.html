@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        h1::first-letter {
+            color: Red;
+            font-size: 60px;
+        }
+
+        p {
+            width: 50%;
+            font-size: 30px;
+        }
+
+        p::first-line {
+            background-color: aqua;
+            color: crimson;
+        }
+
+        p::selection {
+            color: chartreuse;
+            background-color: slategray;
+        }
+
+        input::placeholder {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pseudo Element Selector (::)</h1>
+    <ol>
+        <li>::first-letter</li>
+        <li>::first-line</li>
+        <li>::before</li>
+        <li>::after</li>
+        <li>::selection</li>
+        <li>::placeholder</li>
+    </ol>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ratione blanditiis nostrum facilis doloremque et
+        aperiam! Quibusdam dolorem quis quae voluptatem quos qui nisi? Unde eos labore exercitationem maiores alias.
+        Optio quas dolores sequi deleniti iusto architecto mollitia natus, magni minima! Maxime officiis laborum velit
+        sequi vel repellat, blanditiis modi, facere rerum ullam, aperiam a aliquid delectus molestiae soluta! Corrupti.
+        Aliquam eveniet temporibus expedita esse non inventore laudantium quaerat eius, reprehenderit obcaecati, velit
+        tempora, nam natus dolorem culpa maiores dolore aspernatur cum. Unde maiores sunt quia aperiam, ratione animi
+        corporis.
+        Voluptate minus dolorum quibusdam fuga. Tenetur ducimus voluptate optio maxime. Neque repellendus dignissimos
+        maxime impedit molestias, ratione cupiditate inventore laudantium eius et? Nostrum, alias esse! Quod dolor at
+        tempora cupiditate!
+        Voluptatum sed reprehenderit, recusandae quam quas impedit expedita laborum ducimus praesentium totam porro
+        dignissimos provident consequuntur aliquid molestiae esse distinctio est eius eos. Quaerat autem laborum sint
+        quae deserunt ipsum.</p>
+
+    <input type="text" placeholder="Enter Name">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box {
+            background-color: brown;
+            color: turquoise;
+            font-size: 32px;
+            width: 300px;
+            height: 300px;
+            /* padding: 50px;  */
+            /* top right bottom left */
+            /* padding: 100px 50px 0px 150px; */
+            /* only 2 properties are given -> top/bottom and right/left */
+            padding: 100px 50px;
+
+            /* Same applicable for margin */
+            /* margin: 50px; */
+            /* auto */
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 150px;
+
+            /* border */
+            border-width: 15px;
+            border-style: dotted;
+            border-color: aquamarine;
+
+            box-sizing: border-box;
+            border-radius: 50%;
+            /* border-radius: 25px; */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Box Model</h1>
+
+    <div class="box">
+        Hello All
+    </div>
+</body>
+
+</html>
