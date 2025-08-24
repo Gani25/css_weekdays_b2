@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Unit (em)</title>
+    <style>
+        .outer {
+            width: 900px;
+            height: 400px;
+            background-color: aquamarine;
+            color: red;
+            font-size: 20px;
+        }
+
+        .inner {
+            font-size: 2em;
+            /*Typographically prop take parent font size 
+            2 * 20px = 40*/
+            width: 3em;
+            /*
+            Non typographical properties like width and height take self font size
+            3 * 40 = 120px*/
+            height: 2em;
+            /*2 * 40 = 80 px*/
+            background-color: burlywood;
+            color: cornsilk;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Relative Unit (em)</h1>
+    <ol>
+        <li>
+            Font size of parent, in case of typographical properties like font size
+
+        </li>
+        <li>
+            Font size of itself in case of other properties like width, height
+        </li>
+
+    </ol>
+    <p><strong><u>Drawback of em</u></strong></p>
+    <p>It will create a snowball effect</p>
+    <div class="outer">
+        I am outer div
+        <div class="inner">
+            I am inner div
+        </div>
+    </div>
+
+</body>
+
+</html>

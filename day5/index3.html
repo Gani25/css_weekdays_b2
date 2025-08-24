@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Unit (%)</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .outer {
+            /* static */
+            width: 100%;
+            /* height: 600px; */
+            height: 100vh;
+            /* view height */
+            background-color: chartreuse;
+            /* margin-left: auto;
+            margin-right: auto; */
+            margin-inline: auto;
+        }
+
+        .inner {
+            background-color: tomato;
+            width: 20%;
+            /*200px*/
+            height: 50%;
+            /*300px*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Relative Unit (%)</h1>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+
+</html>

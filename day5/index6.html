@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Unit (rem)</title>
+    <style>
+        html {
+            font-size: 10px;
+        }
+
+        p {
+            font-size: 3rem;
+            /* 3 * 10 = 30px */
+        }
+
+        section {
+            font-size: 1.5rem;
+
+        }
+
+        div {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Relative Unit (rem)</h1>
+    <p>Relative to font size of root element. In html root element is &lt;html&gt; tag</p>
+
+    <section>
+        Main Div
+        <div>
+            Div 1
+            <div>
+                Div 2
+                <div>
+                    Div 3
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
