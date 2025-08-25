@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha and Opacity</title>
+    <style>
+        body {
+            /* background-color: black; */
+        }
+
+        .alpha {
+            color: rgba(255, 0, 0, 0.5);
+        }
+
+        .opacity {
+            width: 50%;
+            height: 250px;
+            background-color: brown;
+            border: 3px solid red;
+            opacity: 0.2;
+            /* display: none; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Alpha</h1>
+    <p>Alpha only works on color ranging from 0 to 1</p>
+    <div class="alpha">
+        I am div of alpha
+    </div>
+
+    <h1>Opacity</h1>
+    <p>Visibility of whole element -> 0 to 1</p>
+    <div class="opacity">
+        I am Opacity
+    </div>
+    <h1>After opacity</h1>
+</body>
+
+</html>
