@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* body {
+            background-color: yellowgreen;
+        } */
+
+        h1 {
+            text-align: center;
+            background-color: aqua;
+            width: 50%;
+            margin-inline: auto;
+            margin-block: 20px;
+        }
+
+        .card {
+            background-color: rgb(255, 214, 214);
+
+            width: 300px;
+            height: 250px;
+            margin-inline: auto;
+            padding: 20px;
+            border-radius: 20px;
+            /* box-shadow: x-dir y-dir blur-radius spread-radius color */
+            /* box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.421); */
+            /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.421), -10px -10px 10px rgba(129, 156, 255, 0.421); */
+            box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.421), inset -10px -10px 10px rgba(129, 156, 255, 0.421);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Box Shadow</h1>
+
+    <div class="card">
+        I am a div
+    </div>
+
+</body>
+
+</html>
