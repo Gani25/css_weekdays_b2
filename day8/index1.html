@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 45px;
+            margin: 20px 50px;
+        }
+
+        div {
+            display: inline-block;
+            border: 2px solid red;
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+
+        }
+
+        /* Position */
+
+        /* Static */
+        .static {
+            position: static;
+            top: 100px;
+            left: 100px;
+        }
+
+        /* Relative */
+        .relative-parent div {
+            border: 2px solid rgb(0, 255, 13);
+            background-color: blue;
+            /* z-index: -5; Won't work as it is static and no property applies on static */
+
+        }
+
+
+        .relative-parent .relative {
+            position: relative;
+            background-color: aqua;
+            /* top: 20px; */
+            left: 200px;
+            top: 50px;
+            z-index: 2;
+        }
+
+        /* Fixed */
+        .fixed-parent div {
+            border: 2px solid orange;
+            background-color: antiquewhite;
+        }
+
+        .fixed-parent .fixed {
+            background-color: chartreuse;
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 0;
+            width: 100%;
+            height: 50px;
+
+        }
+
+        /* Sticky */
+        .sticky {
+            position: sticky;
+            background-color: rgb(71, 187, 255);
+            top: 0px;
+            left: 0px;
+        }
+
+        /* absolute */
+        .absolute-parent-1 {
+            position: relative;
+            border: 2px solid green;
+            background-color: rgba(255, 166, 0, 0.608);
+        }
+
+        .absolute {
+            position: absolute;
+            background-color: rgba(0, 183, 255, 0.581);
+            top: 0;
+            right: 0;
+            margin: 0;
+        }
+
+        .absolute-parent-2 {
+            position: relative;
+            border: 2px solid rgb(4, 0, 128);
+            background-color: rgba(0, 255, 34, 0.608);
+        }
+
+        .absolute-sub-parent-2 {
+            border: 4px solid purple;
+        }
+
+        .absolute-1 {
+            position: absolute;
+            background-color: rgba(255, 170, 0, 0.581);
+            top: 0;
+            right: 0;
+            margin: 0;
+        }
+
+        .bottom-play {
+            height: 1500px;
+            border: none;
+            display: block;
+            /* width: 200%; */
+            background-color: rgb(255, 240, 249);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="container">
+        <h1>Static Demo</h1>
+        <div>I am a box 1</div>
+        <div class="static">I am Static</div>
+        <div>I am a box 2 after static</div>
+    </section>
+    <section class="relative-parent">
+        <h1>Relative Demo</h1>
+        <div>I am a box 3</div>
+        <div class="relative">I am relative</div>
+        <div>I am a box 4 after relative</div>
+    </section>
+
+    <section class="fixed-parent">
+        <h1>Fixed Demo</h1>
+        <div>I am a box 5</div>
+        <div class="fixed">I am fixed</div>
+        <div>I am a box 6 after fixed</div>
+    </section>
+
+    <!-- <h1>Sticky</h1>
+    <div>I am a box 7</div>
+    <div class="sticky">I am sticky</div>
+    <div>I am a box 8 after sticky</div> -->
+
+    <section class="absolute-parent-1">
+        <h1>Absolute Demo</h1>
+        <div>I am a box 9</div>
+        <div class="absolute">I am absolute</div>
+        <div>I am a box 10 after absolute</div>
+    </section>
+    <section class="absolute-parent-2">
+        <h1>Absolute Demo 2 </h1>
+        <section class="absolute-sub-parent-2">
+            <div>I am a box 9</div>
+            <div class="absolute-1">I am absolute</div>
+            <div>I am a box 10 after absolute</div>
+        </section>
+    </section>
+
+    <div class="bottom-play"></div>
+</body>
+
+</html>

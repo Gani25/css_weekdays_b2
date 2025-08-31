@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smiley Face</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: wheat;
+
+        }
+
+        .face {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: rgb(255, 230, 0);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .eye {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: black;
+            top: 150px;
+        }
+
+        .eye-left {
+
+            left: 120px;
+        }
+
+        .eye-right {
+            right: 120px;
+        }
+
+        .white {
+            position: absolute;
+            background-color: white;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .mouth {
+            width: 250px;
+            height: 50px;
+            background-color: brown;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            position: absolute;
+            bottom: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="face">
+            <div class="eye eye-left">
+                <div class="white"></div>
+            </div>
+            <div class="eye eye-right">
+                <div class="white"></div>
+            </div>
+            <div class="mouth"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
