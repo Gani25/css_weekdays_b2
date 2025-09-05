@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Presets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(44, 44, 44);
+  --secondary-color: rgb(136, 0, 255);
+  --bg-color: rgb(230, 228, 228);
+  --bg-secodnary-color: #fff;
+}
+
+/* Styling Elements */
+html {
+  font-size: 10px;
+}
+body {
+  background-color: var(--bg-color);
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+}
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.container {
+  transition: all 0.5s ease;
+  display: flex;
+  width: 100%;
+  margin-inline: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: var(--bg-secodnary-color);
+  height: fit-content;
+  width: 350px;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.612);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 5px 5px 30px grey;
+  transform: scale(1.05);
+}
+
+.card-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  font-size: 5rem;
+  color: var(--secondary-color);
+  margin-block: 1rem;
+}

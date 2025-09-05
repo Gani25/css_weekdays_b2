@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Grow and Shrink</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* body {
+            overflow-x: hidden;
+        } */
+
+        .flex-container {
+            width: 90%;
+            height: 70vh;
+            background-color: aquamarine;
+            border: 5px solid rgb(0, 55, 255);
+            margin-inline: auto;
+            display: flex;
+            align-items: start;
+
+
+
+        }
+
+        .item {
+            /* width: 500px; */
+            /* Set initial length of item flex-basis */
+            /* flex-basis: 300px; */
+            height: 100px;
+        }
+
+        #One {
+            /* flex : flex-grow flex-shrink flex-basis */
+            flex: 1 0 300px;
+        }
+
+        .item-3 {
+            align-self: end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; margin-block: 30px;">FlexBox Playground</h1>
+    <div class="flex-container">
+        <div class="item" style="background-color: red; " id="One">One</div>
+        <div class="item" style="background-color: bisque; flex: 2 0 300px;">Two</div>
+        <div class="item item-3" style="background-color: violet;  ">Three</div>
+    </div>
+</body>
+
+</html>
