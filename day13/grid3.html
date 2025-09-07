@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightgrey;
+        }
+
+        .container {
+            width: 90%;
+            height: 500px;
+            background-color: white;
+            padding: 20px;
+            margin-inline: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            /* Placement of items wrt to horizontal line */
+            /* justify-items: end; */
+            /* justify-items: center; */
+            /* Placement of items wrt to vertical line */
+            /* align-items: center; */
+            place-items: center;
+
+
+        }
+
+        .item {
+            background-color: aquamarine;
+            width: 100px;
+            height: 50px;
+        }
+
+        .item5 {
+            justify-self: start;
+            align-self: end;
+        }
+
+        .item9 {
+            place-self: end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center" style="margin-block: 30px;">Grid Playground</h1>
+
+    <div class="container">
+        <div class="item item1" style="background-color: aqua; text-align: right;">1</div>
+        <div class="item item2" style="background-color: red;">2</div>
+        <div class="item item3" style="background-color: orange;">3</div>
+        <div class="item item4" style="background-color: purple;">4</div>
+        <div class="item item5" style="background-color: yellow;">5</div>
+        <div class="item item6" style="background-color: rgb(193, 135, 26);">6</div>
+        <div class="item item7" style="background-color: turquoise;">7</div>
+        <div class="item item8" style="background-color: crimson;">8</div>
+        <div class="item item9" style="background-color: burlywood;">9</div>
+
+
+
+    </div>
+</body>
+
+</html>
