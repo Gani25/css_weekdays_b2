@@ -25,21 +25,47 @@ h4 span {
   opacity: 0.5;
   text-decoration: line-through;
 }
+h5 {
+  font-size: 22px;
+  margin-top: 20px;
+}
 
 input[type="radio"] {
   display: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: #944852;
+  border-radius: 10px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Classes */
 .wrapper {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(196deg, #f1a9a9, #e66767);
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.section {
+  width: 900px;
+  max-width: calc(100%-40px);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
 .info-wrap {
-  width: 500px;
+  width: 450px;
   padding: 30px;
   border: 2px solid cyan;
 }
@@ -97,4 +123,75 @@ input[type="radio"] {
 #details:checked ~ .accor-2 {
   opacity: 1;
   transform: translate(0);
+}
+
+/* Styling Color Btn */
+.color-btn + label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+  margin-left: 10px;
+}
+
+.color-one + label {
+  background-image: url("./images/color1.jpg");
+}
+.color-two + label {
+  background-image: url("./images/color2.jpg");
+}
+.color-three + label {
+  background-image: url("./images/color3.jpg");
+}
+.color-four + label {
+  background-image: url("./images/color4.jpg");
+}
+.color-five + label {
+  background-image: url("./images/color5.jpg");
+}
+.color-six + label {
+  background-image: url("./images/color6.jpg");
+}
+.color-btn:hover + label {
+  transform: scale(1.1);
+}
+.color-btn:checked + label {
+  border: 4px solid #424242;
+  transform: scale(1.3);
+}
+
+/* Applying bg logic */
+.bg-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(196deg, #f1a9a9, #e66767);
+  z-index: -1;
+}
+
+.bg-color-1 {
+  /* opacity: 0; */
+}
+.bg-color-2 {
+  background-image: linear-gradient(196deg, #4c4c4c, #262626);
+  opacity: 0;
+}
+.bg-color-3 {
+  background-image: linear-gradient(196deg, #8a9fb2, #5f7991);
+  opacity: 0;
+}
+.bg-color-4 {
+  background-image: linear-gradient(196deg, #97afc3, #6789a7);
+  opacity: 0;
+}
+.bg-color-5 {
+  background-image: linear-gradient(196deg, #afa6a0, #8c7f76);
+  opacity: 0;
+}
+.bg-color-6 {
+  background-image: linear-gradient(196deg, #aaadac, #838786);
+  opacity: 0;
 }
