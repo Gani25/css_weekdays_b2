@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+        h1 {
+            background-color: red;
+            color: yellow;
+            font-size: 5rem;
+        }
+
+        .box {
+            width: 1000px;
+            height: 350px;
+
+            background-color: aqua;
+            font-size: 30px;
+        }
+
+        /* @media (width:1024px) {
+            h1 {
+                background-color: aquamarine;
+                color: slategray;
+                font-size: 4rem;
+            }
+
+            .box {
+                width: 700px;
+                height: 350px;
+
+                background-color: rgb(68, 0, 255);
+                font-size: 25px;
+            }
+        } */
+
+        @media (max-width:1024px) {
+            h1 {
+                background-color: aquamarine;
+                color: slategray;
+                font-size: 4rem;
+            }
+
+            .box {
+                width: 700px;
+                height: 350px;
+
+                background-color: rgb(68, 0, 255);
+                font-size: 25px;
+            }
+        }
+
+        @media (min-width:1025px) {
+            h1 {
+                background-color: rgb(21, 255, 0);
+                color: rgb(255, 0, 191);
+                font-size: 5rem;
+            }
+
+            .box {
+                width: 1000px;
+                height: 350px;
+
+                background-color: rgb(255, 200, 0);
+                font-size: 30px;
+            }
+        }
+
+        /* Mobile */
+        @media (min-width:320px) and (max-width:426px) {
+            h1 {
+                background-color: rgb(255, 127, 187);
+                color: rgb(188, 199, 34);
+                font-size: 2rem;
+            }
+
+            .box {
+                width: 40%;
+                height: 350px;
+
+                background-color: rgb(94, 45, 0);
+                font-size: 25px;
+            }
+        }
+
+        /* Small Devices */
+        @media (max-width:320px) {
+            h1 {
+                background-color: rgb(127, 255, 189);
+                color: rgb(34, 48, 199);
+                font-size: 1rem;
+            }
+
+            .box {
+                width: 20%;
+                height: 350px;
+
+                background-color: rgb(255, 7, 20);
+                font-size: 25px;
+            }
+        }
+
+        /* Devices Orientation */
+        /* @media (orientation: landscape) {
+            h1 {
+                background-color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+                font-size: 1rem;
+            }
+
+            .box {
+                width: 20%;
+                height: 20vh;
+
+                background-color: rgb(7, 251, 255);
+                font-size: 25px;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- For responsive web design we use media queries
+    @media (condition) and (condition){
+        tag{
+        }
+        tag{
+        }
+    } 
+    -->
+    <h1>Media Queries</h1>
+    <div class="box">I am BOX</div>
+</body>
+
+</html>
